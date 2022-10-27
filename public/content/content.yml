@@ -1,0 +1,13 @@
+products:
+
+  - name: "Vinilado"
+    description: "El vinilado queda muy bien de la siguiente forma bla bla bla"
+    img:
+      - test1.jpg
+      - test2.jpg
+
+  - name: "Cerámico"
+    description: "El vinilado queda muy bien de la siguiente forma bla bla bla"
+    img:
+      - test3.jpg
+      - test4.jpg
