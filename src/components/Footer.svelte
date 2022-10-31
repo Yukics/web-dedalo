@@ -5,7 +5,7 @@
 <style>
     /* Desktop */
     .container{
-        position: relative;
+        /* position: relative; */
         font-size: 0.5vw;
         width: 100%;
         background-color:#242424;
@@ -33,6 +33,11 @@
         line-height: 1.4vw;
         color: aliceblue;
     }
+    .bold{
+        font-size: 1.2em;
+        padding-bottom: 0.6vh;
+    }
+
 
     /* Mobile */
     @media only screen and (max-width: 600px) {
@@ -54,6 +59,7 @@
             flex-direction: column;
             justify-content: space-around;
             align-items: flex-start;
+            gap: 2vh;
         }
         .autor{
             padding-top: 2vh;
@@ -72,6 +78,8 @@
         .bold{
             color: rgb(158, 158, 158);
             font-weight: 900;
+            font-size: 6em;
+            padding-bottom: 0.6vh;
         }
     }
 </style>
@@ -79,16 +87,16 @@
 <div class="container">
     <div class="info">
         <div class="col1">
-            <p class="bold">Localización</p><br>
+            <p class="bold">Localización</p>
             <p>C/ Son Julià, 200 - Nave 14<br>Polígono Son Noguera<br>07620 Llucmajor</p>
         </div>
         <div class="col2">
-            <br><p class="bold">Contacto</p><br>
+            <p class="bold">Contacto</p>
             <p>Teléfono 1: 607 288 872<br>Teléfono 2: 670 628 972<br>Email: impermeabilizaciones@dedalosl.com</p>
         </div>
         <div class="autor">
-            <a href="/">Dedalo SL ©</a><br>
-            <a href="https://github.com/yukics" target="_blank" rel="noopener noreferrer">Alejo Morell 2022 ©</a>
+            <p><a href="/">Dedalo SL ©</a></p>
+            <p><a href="https://github.com/yukics" target="_blank" rel="noopener noreferrer">Alejo Morell 2022 ©</a></p>
         </div>
     </div>
 </div>

@@ -1,6 +1,7 @@
 <script lang="ts">
+    import Gallery from "./Gallery.svelte";
+    import { fade } from 'svelte/transition';
     export let product;
-
 </script>
 
 <style>
@@ -35,8 +36,9 @@
     }
 </style>
 
-<div class="card">
+<div class="card" in:fade>
     <h2>{product.name}</h2>
-    <img src={`/content/${product.img[0]}`} alt="main product" class="first-image"/>
+    <!-- <img src={`/content/${product.img[0]}`} alt="main product" class="first-image"/> -->
+    <Gallery images={product.img}/>
     <p>{product.descripcion}</p>
 </div>

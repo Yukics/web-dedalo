@@ -10,19 +10,31 @@
 
   //? page store persistence
   page.subscribe(val => localStorage.setItem("page", val));
+  let disabledScroll=true;
 </script>
 
-<NavBar/>
-{#if $page === "inicio"}
+<style>
+  body{
+    overflow-y: auto;
+  }
+  .scroll-lock {
+		overflow-y: hidden;
+	}
+</style>
+
+<main class:scroll-lock={disabledScroll}>
+  <NavBar/>
+  {#if $page === "inicio"}
   <Main/>
   <Empresa/>
-{:else if $page === "product"}
+  {:else if $page === "product"}
   <Products/>
-{:else if $page === "contact"}
+  {:else if $page === "contact"}
   <Contact/>
-{/if}
-<Footer/>
-
+  {/if}
+  <Footer/>
+</main>
+  
 
 
 

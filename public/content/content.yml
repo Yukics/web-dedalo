@@ -6,6 +6,10 @@
       img:
         - test1.jpg
         - test2.jpg
+        - test1.jpg
+        - test2.jpg
+        - test1.jpg
+        - test2.jpg
     - name: "Azul"
       descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
       img:
@@ -21,7 +25,11 @@
       img:
         - test3.jpg
         - test4.jpg
-    
+    - name: "Naranja"
+      descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
+      img:
+        - test3.jpg
+        - test4.jpg   
 
 - tipo: "Cerámico"
   descripcion: "La mayor calidad"
