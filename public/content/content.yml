@@ -1,13 +1,38 @@
-products:
+- tipo: "Vinilado"
+  descripcion: "Rápidamente aplicable y con excelentes resultados"
+  productos:
+    - name: "Blanco"
+      descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
+      img:
+        - test1.jpg
+        - test2.jpg
+    - name: "Azul"
+      descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
+      img:
+        - test3.jpg
+        - test4.jpg
+    - name: "Verde"
+      descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
+      img:
+        - test1.jpg
+        - test2.jpg
+    - name: "Naranja"
+      descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
+      img:
+        - test3.jpg
+        - test4.jpg
+    
 
-  - name: "Vinilado"
-    description: "El vinilado queda muy bien de la siguiente forma bla bla bla"
-    img:
-      - test1.jpg
-      - test2.jpg
-
-  - name: "Cerámico"
-    description: "El vinilado queda muy bien de la siguiente forma bla bla bla"
-    img:
-      - test3.jpg
-      - test4.jpg
+- tipo: "Cerámico"
+  descripcion: "La mayor calidad"
+  productos:
+    - name: "Amarillo"
+      descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
+      img:
+        - test1.jpg
+        - test2.jpg
+    - name: "Rojo"
+      descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
+      img:
+        - test3.jpg
+        - test4.jpg

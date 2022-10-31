@@ -55,7 +55,7 @@
             padding-top: 4vh;
         }
         h1{
-            font-size: 20em;
+            font-size: 16em;
             word-break:break-all;
         }
     }
@@ -66,7 +66,7 @@
     <div class="bg-image">
     </div>
     <div class="title">
-        <h1 in:scale out:fade>Dedalo SL</h1>
+        <h1 in:scale out:fade>Dedalo<br>SL</h1>
     </div>
     <div class="allWaves">      
         <div class="waves">

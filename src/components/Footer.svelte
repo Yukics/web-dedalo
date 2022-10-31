@@ -5,16 +5,18 @@
 <style>
     /* Desktop */
     .container{
+        position: relative;
         font-size: 0.5vw;
         width: 100%;
         background-color:#242424;
-        padding-bottom: 4vh;
-        height: 8vh;
+        height: 16vh;
         font-size: 80%;
         line-height: 2vw;
         display: flex;
         flex-direction: column;
         align-items: center;
+        align-content: center;
+        justify-content: center;
     }
     .info{
         width: 90%;
@@ -38,8 +40,8 @@
             font-size: 0.5vw;
             width: 100%;
             background-color:#242424;
-            padding-bottom: 4vh;
-            height: 48vh;
+            /* padding-bottom: 4vh; */
+            height: 52vh;
             font-size: 80%;
             line-height: 2vw;
             display: flex;
@@ -65,6 +67,11 @@
             font-size: 3.6rem;
             line-height: 1.4em;
             color: aliceblue;
+            word-break:break-all;
+        }
+        .bold{
+            color: rgb(158, 158, 158);
+            font-weight: 900;
         }
     }
 </style>
@@ -72,11 +79,11 @@
 <div class="container">
     <div class="info">
         <div class="col1">
-            <b><p>Localización</p></b>
+            <p class="bold">Localización</p><br>
             <p>C/ Son Julià, 200 - Nave 14<br>Polígono Son Noguera<br>07620 Llucmajor</p>
         </div>
         <div class="col2">
-            <b><p>Contacto</p></b>
+            <br><p class="bold">Contacto</p><br>
             <p>Teléfono 1: 607 288 872<br>Teléfono 2: 670 628 972<br>Email: impermeabilizaciones@dedalosl.com</p>
         </div>
         <div class="autor">

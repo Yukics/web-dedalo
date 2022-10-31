@@ -12,22 +12,17 @@
   page.subscribe(val => localStorage.setItem("page", val));
 </script>
 
-<style>
+<NavBar/>
+{#if $page === "inicio"}
+  <Main/>
+  <Empresa/>
+{:else if $page === "product"}
+  <Products/>
+{:else if $page === "contact"}
+  <Contact/>
+{/if}
+<Footer/>
 
-</style>
-
-<div>
-  <NavBar/>
-  {#if $page === "inicio"}
-    <Main/>
-    <Empresa/>
-  {:else if $page === "product"}
-    <Products/>
-  {:else if $page === "contact"}
-    <Contact/>
-  {/if}
-  <Footer/>
-</div>
 
 
 
