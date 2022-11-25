@@ -100,21 +100,21 @@
     <div class="gallery" >
         <div class="closeButton" on:mousedown={() => galleryOn=false}><Fa icon={faX}/></div>
         <div class="selectedImage">
-            <img src={`/content/${currentImage}`} alt="currently selected" class="imgBig">
+            <img src={`${currentImage}`} alt="currently selected" class="imgBig">
         </div>
         <div class="imageSelection">
             {#each images as image}
-                <img src={`/content/${image}`} alt="miniaturas" class="mini" on:mousedown={() => currentImage=image}/>
+                <img src={`${image}`} alt="miniaturas" class="mini" on:mousedown={() => currentImage=image}/>
             {/each}
         </div>
     </div>
 {/if}
 
 <div>
-    <img src={`/content/${images[0]}`} alt="main product" class="first-image"/>
+    <img src={`${images[0]}`} alt="main product" class="first-image"/>
 </div>
 <div class="miniaturas">
     {#each images as image}
-        <img src={`/content/${image}`} alt="miniaturas" class="mini" on:mousedown={() => galleryOn=true} on:mousedown={() => currentImage=image}/>
+        <img src={`${image}`} alt="miniaturas" class="mini" on:mousedown={() => galleryOn=true} on:mousedown={() => currentImage=image}/>
     {/each}
 </div>
