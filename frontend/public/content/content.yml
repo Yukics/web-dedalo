@@ -4,15 +4,15 @@
     
     - name: "Arena"
       descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
-      imgPath: "/monocromo/arena"
+      imgPath: "/monocromo/arena/"
 
     - name: "Azul"
       descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
-      imgPath: "/monocromo/azul"
+      imgPath: "/monocromo/azul/"
 
     - name: "Blanco"
       descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
-      imgPath: "/monocromo/blanco"
+      imgPath: "/monocromo/blanco/"
 
 - tipo: "Texturizadas"
   descripcion: "Rápidamente aplicable y con excelentes resultados"
@@ -20,19 +20,19 @@
     
     - name: "Prestige"
       descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
-      imgPath: "/texturizadas/PRESTIGE"
+      imgPath: "/texturizadas/PRESTIGE/"
 
     - name: "Relax"
       descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
-      imgPath: "/texturizadas/RELAX" 
+      imgPath: "/texturizadas/RELAX/" 
 
     - name: "Sublime"
       descripcion: "Pos ha quedao buena tarde"
-      imgPath: "/texturizadas/SUBLIME"
+      imgPath: "/texturizadas/SUBLIME/"
           
     - name: "Vanity"
       descripcion: "Pos ha quedao pero que muy buena tarde"
-      imgPath: "/texturizadas/VANITY"
+      imgPath: "/texturizadas/VANITY/"
  
 - tipo: "Estampadas"
   descripcion: "Rápidamente aplicable y con excelentes resultados"
@@ -40,15 +40,15 @@
     
     - name: "Carrara"
       descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
-      imgPath: "/estampadas/CARRARA"
+      imgPath: "/estampadas/CARRARA/"
     
     - name: "Persia azul"
       descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
-      imgPath: "/estampadas/PERSIAAZUL"
+      imgPath: "/estampadas/PERSIAAZUL/"
     
     - name: "Persia marron"
       descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
-      imgPath: "/estampadas/PERSIAMARRON"
+      imgPath: "/estampadas/PERSIAMARRON/"
 
 - tipo: "Construcción"
   descripcion: "La mayor calidad"
@@ -56,4 +56,4 @@
     
     - name: "Aljibes agua potable"
       descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
-      imgPath: "/construccion/ALJIBESDEAGUAPOTABLE"
+      imgPath: "/construccion/ALJIBESDEAGUAPOTABLE/"

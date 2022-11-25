@@ -23,7 +23,7 @@ async function getImagesFromRoutes(confFile){
     return confFile
 }
 
-async function listDirectoryToArray(path:string){
+async function listDirectoryToArray(path:string): Promise<string[]>{
 
     const res = await axios.get(`/content${path}`);
     var el = document.createElement("html");
@@ -33,7 +33,7 @@ async function listDirectoryToArray(path:string){
     let arr: string[] = [];
 
     lis.forEach(litem => {
-        arr.push(`/content${path}/${getImageFromPath(litem.toString())}`)
+        arr.push(`/content${path}${getImageFromPath(litem.toString())}`)
     });
     console.log(arr.shift())
     return arr;
