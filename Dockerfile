@@ -6,8 +6,8 @@ COPY ./frontend/ /app/
 
 RUN npm install && npm run build
 
-FROM bitnami/nginx 
+FROM nginx 
 
-COPY --from=build /app/dist /app
+COPY --from=build /app/dist /usr/share/nginx/html
 
-COPY ./nginx/nginx.conf /opt/bitnami/nginx/conf/nginx.conf
+COPY ./nginx/nginx.conf /etc/nginx/nginx.conf

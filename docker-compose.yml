@@ -3,4 +3,6 @@ services:
   dedalo:
     build: .
     ports:
-      - 81:8080
+      - 80:80
+    environment:
+      - NGINX_PORT=80

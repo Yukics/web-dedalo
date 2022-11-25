@@ -6,7 +6,6 @@ export default async function getElements(){
         const res = await axios.get(`/content/content.yml`);
         const loadedFile = yaml.load(res.data);
         const confFile = await getImagesFromRoutes(loadedFile);
-        console.log(confFile)
         return confFile
     } catch (err) {
         console.log(err);
@@ -21,7 +20,6 @@ async function getImagesFromRoutes(confFile){
             arr[i].productos[y].img = await listDirectoryToArray(arr[i].productos[y].imgPath)
         }
     }
-    console.log(confFile)
     return confFile
 }
 
@@ -35,8 +33,6 @@ async function listDirectoryToArray(path:string){
     let arr: string[] = [];
 
     lis.forEach(litem => {
-        console.log(litem.toString())
-        console.log(getImageFromPath(litem.toString()))
         arr.push(`/content${path}/${getImageFromPath(litem.toString())}`)
     });
     console.log(arr.shift())
