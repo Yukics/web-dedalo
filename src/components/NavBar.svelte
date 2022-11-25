@@ -46,6 +46,10 @@
         flex-direction: row;
         justify-content: space-between; 
     }
+
+    .icon{
+        cursor: pointer;
+    }
     img{
         /* padding: 1vw; */
         padding-top: 1vw;
@@ -134,17 +138,17 @@
     <div class="desktop">
         <nav>
             <!-- svelte-ignore a11y-click-events-have-key-events -->
-            <div on:mousedown={() => setPage("inicio")}>
-                <img src="/src/img/dedalo-rojo.svg" alt="log">
+            <div on:mousedown={() => setPage("inicio")} class="icon">
+                <img src="/img/dedalo-rojo.svg" alt="log">
             </div>
             <div class="links">
                 <ul>
                     <!-- svelte-ignore a11y-click-events-have-key-events -->
-                    <li on:click={() => setPage("inicio")}>Inicio</li>
+                    <li on:click={() => setPage("inicio")}><p>Inicio</p></li>
                     <!-- svelte-ignore a11y-click-events-have-key-events -->
-                    <li on:click={() => setPage("product")}>Productos</li>
+                    <li on:click={() => setPage("product")}><p>Productos</p></li>
                     <!-- svelte-ignore a11y-click-events-have-key-events -->
-                    <li on:click={() => setPage("contact")}>Contacto</li>
+                    <li on:click={() => setPage("contact")}><p>Contacto</p></li>
                 </ul>
             </div>
         </nav>
@@ -153,7 +157,7 @@
     <div class="mobile">
         <nav>
             <div>
-                <img src="/src/img/dedalo-rojo.svg" alt="logo">
+                <img src="/img/dedalo-rojo.svg" alt="logo">
             </div>
             <div class="burger" on:mousedown={()=>handleMenu()}>
                 {#if menu === true}
@@ -170,9 +174,9 @@
             }} transition:slide>
                 <div class="links">
                     <ul>
-                        <li on:mousedown={() => setPage("inicio")}>Inicio</li>
-                        <li on:mousedown={() => setPage("product")}>Productos</li>
-                        <li on:mousedown={() => setPage("contact")}>Contacto</li>
+                        <li on:mousedown={() => setPage("inicio")}><p>Inicio</p></li>
+                        <li on:mousedown={() => setPage("product")}><p>Productos</p></li>
+                        <li on:mousedown={() => setPage("contact")}><p>Contacto</p></li>
                     </ul>
                 </div>
             </div>

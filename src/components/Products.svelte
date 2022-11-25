@@ -33,8 +33,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-start;
     padding-top: 4vh;
-    gap: 2vw;
+    gap: 2.2vw;
   }
   h1{
     font-size: 1.8em;

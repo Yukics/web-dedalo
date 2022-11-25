@@ -1,25 +1,53 @@
-- tipo: "Vinilado"
+- tipo: "Monocromo"
   descripcion: "Rápidamente aplicable y con excelentes resultados"
   productos:
-    - name: "Blanco"
+    - name: "Arena"
       descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
-      img:
-        - test1.jpg
-        - test2.jpg
-        - test1.jpg
-        - test2.jpg
-        - test1.jpg
-        - test2.jpg
+      img:  
+        - "/monocromo/arena/1.jpeg"
+        - "/monocromo/arena/2.jpeg"
+        - "/monocromo/arena/3.jpg"
+        - "/monocromo/arena/4.jpg"
+        - "/monocromo/arena/5.jpg"
+        - "/monocromo/arena/6.jpg"
     - name: "Azul"
       descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
       img:
-        - test3.jpg
-        - test4.jpg
-    - name: "Verde"
+        - "/monocromo/azul/1/1.jpeg"
+        - "/monocromo/azul/1/2.jpeg"
+        - "/monocromo/azul/1/3.jpeg"
+        - "/monocromo/azul/1/4.jpeg"
+        - "/monocromo/azul/1/5.jpeg"
+        - "/monocromo/azul/1/6.jpeg"
+        - "/monocromo/azul/1/7.jpeg"
+    - name: "Blanco"
       descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
       img:
-        - test1.jpg
-        - test2.jpg
+        - "/monocromo/blanco/1/1.jpeg"
+        - "/monocromo/blanco/1/2.jpeg"
+        - "/monocromo/blanco/1/3.jpeg"
+        - "/monocromo/blanco/1/4.jpeg"
+        - "/monocromo/blanco/1/5.jpeg"
+        - "/monocromo/blanco/1/6.jpeg"
+
+- tipo: "Texturizadas"
+  descripcion: "Rápidamente aplicable y con excelentes resultados"
+  productos:
+    - name: "Prestige"
+      descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
+      img:
+        - "/texturizadas/PRESTIGE/1/1.jpeg"
+        - "/texturizadas/PRESTIGE/1/2.jpeg"
+        - "/texturizadas/PRESTIGE/1/3.jpeg"
+        - "/texturizadas/PRESTIGE/1/4.jpeg"
+        - "/texturizadas/PRESTIGE/1/5.jpeg"
+        - "/texturizadas/PRESTIGE/1/6.jpeg"
+        - "/texturizadas/PRESTIGE/1/7.jpeg"
+        - "/texturizadas/PRESTIGE/1/8.jpeg"
+        - "/texturizadas/PRESTIGE/1/9.jpeg"
+        - "/texturizadas/PRESTIGE/1/10.jpeg"
+
+
     - name: "Naranja"
       descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
       img:

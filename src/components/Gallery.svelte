@@ -4,12 +4,10 @@
     export let images;
     let galleryOn=false;
     let currentImage;
-
 </script>
 
 <style>
     .first-image{
-        padding-top: 2vh;
         width: 100%;
         height: 20vh;
         object-fit: cover;
@@ -21,7 +19,20 @@
         height: 16%;
         display: flex;
         flex-direction: row;
-        overflow: hidden;        
+        overflow-x: scroll;      
+    }
+    ::-webkit-scrollbar {
+        width: 1vw;
+        height: 1vh;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgba(118, 175, 255, 0.587);
+        border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
     }
     .mini{
         width: 22%;
@@ -51,22 +62,37 @@
         max-height: 70vh;
     }
     .imageSelection{
-        padding-left: 10vw;
-        padding-right: 10vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
         padding-top: 2vh;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         gap: 1vw;
+        overflow-x: scroll;
     }
     .imageSelection > img{
         width: auto;
         max-height: 8vh;
     }
     .closeButton{
-        margin-top: 4vh;
-        margin-left: 96vw;
+        margin-top: 2%;
+        margin-left: 2%;
+        color:aliceblue;
+        font-size: 2em;
+    }
+    .closeButton:hover{
+        cursor: pointer;
+        color: aliceblue;
+    }
+    @media only screen and (max-width: 600px) {
+        .closeButton{
+            font-size: 6em;
+            padding: 2vw;
+        }
+        /* .closeButton{}
+        } */
     }
 </style>
 
