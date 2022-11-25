@@ -1,6 +1,7 @@
 - tipo: "Monocromo"
   descripcion: "Rápidamente aplicable y con excelentes resultados"
   productos:
+    
     - name: "Arena"
       descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
       imgPath: "/monocromo/arena"
@@ -16,6 +17,7 @@
 - tipo: "Texturizadas"
   descripcion: "Rápidamente aplicable y con excelentes resultados"
   productos:
+    
     - name: "Prestige"
       descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
       imgPath: "/texturizadas/PRESTIGE"
@@ -35,20 +37,23 @@
 - tipo: "Estampadas"
   descripcion: "Rápidamente aplicable y con excelentes resultados"
   productos:
+    
     - name: "Carrara"
       descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
       imgPath: "/estampadas/CARRARA"
+    
+    - name: "Persia azul"
+      descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
+      imgPath: "/estampadas/PERSIAAZUL"
+    
+    - name: "Persia marron"
+      descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
+      imgPath: "/estampadas/PERSIAMARRON"
 
-# - tipo: "Construcción"
-#   descripcion: "La mayor calidad"
-#   productos:
-#     - name: "Amarillo"
-#       descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
-#       img:
-#         - test1.jpg
-#         - test2.jpg
-#     - name: "Rojo"
-#       descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
-#       img:
-#         - test3.jpg
-#         - test4.jpg
+- tipo: "Construcción"
+  descripcion: "La mayor calidad"
+  productos:
+    
+    - name: "Aljibes agua potable"
+      descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
+      imgPath: "/construccion/ALJIBESDEAGUAPOTABLE"
