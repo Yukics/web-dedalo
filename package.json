@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@picocss/pico": "^1.5.6",
+    "svelte-lazy": "^1.1.0",
+    "svelte-lazy-image": "^0.5.1"
+  }
+}
