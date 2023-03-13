@@ -6,6 +6,7 @@ export default async function getElements(){
         const res = await axios.get(`/content/content.yml`);
         const loadedFile = yaml.load(res.data);
         const confFile = await getImagesFromRoutes(loadedFile);
+        console.log(confFile)
         return confFile
     } catch (err) {
         console.log(err);
@@ -26,26 +27,24 @@ async function getImagesFromRoutes(confFile){
 async function listDirectoryToArray(path:string): Promise<string[]>{
 
     const res = await axios.get(`/content${path}`);
-    var el = document.createElement("html");
-    el.innerHTML = res.data
-    const lis = el.querySelectorAll("a")
 
     let arr: string[] = [];
 
-    lis.forEach(litem => {
-        arr.push(`/content${path}${getImageFromPath(litem.toString())}`)
+    res.data.forEach(litem => {
+        arr.push(`/content${path}${litem.name}`)
     });
-    console.log(arr.shift())
+
+    // console.log(arr.shift())
     return arr;
 }
 
-function getImageFromPath(hostname: string): string{
-    return hostname.substring(hostname.lastIndexOf("/") + 1)
-}
+// function getImageFromPath(hostname: string): string{
+//     return hostname.substring(hostname.lastIndexOf("/") + 1)
+// }
 
-function extractFromHtmlTags(taggedHtml:string):string{
-    return taggedHtml.substring(
-        taggedHtml.indexOf(">") + 1, 
-        taggedHtml.lastIndexOf("<")
-    );
-}
+// function extractFromHtmlTags(taggedHtml:string):string{
+//     return taggedHtml.substring(
+//         taggedHtml.indexOf(">") + 1, 
+//         taggedHtml.lastIndexOf("<")
+//     );
+// }

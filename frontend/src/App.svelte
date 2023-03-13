@@ -14,7 +14,7 @@
 </script>
 
 <style>
-  body{
+  main{
     overflow-y: auto;
   }
   .scroll-lock {
@@ -24,13 +24,16 @@
 
 <main class:scroll-lock={disabledScroll}>
   <NavBar/>
+
   {#if $page === "inicio"}
-  <Main/>
-  <Empresa/>
+    <Main/>
+    <Empresa/>
+
   {:else if $page === "product"}
-  <Products/>
+    <Products/>
+  
   {:else if $page === "contact"}
-  <Contact/>
+    <Contact/>
   {/if}
   <Footer/>
 </main>

@@ -1,11 +1,9 @@
 <script lang="ts">
     import Fa from 'svelte-fa'
     import { faX } from '@fortawesome/free-solid-svg-icons'
-    import Lazy from 'svelte-lazy';
-
     export let images;
-    let galleryOn: Boolean = false;
-    let currentImage: String;
+    let galleryOn=false;
+    let currentImage;
 </script>
 
 <style>
@@ -16,14 +14,12 @@
         border-radius: 5px;
     }
     .miniaturas{
-        gap: 1%;
+        gap: 4%;
         width: 100%;
         height: 16%;
         display: flex;
         flex-direction: row;
-        overflow-x: scroll;     
-        overflow-y: hidden;
-
+        overflow-x: scroll;      
     }
     ::-webkit-scrollbar {
         width: 1vw;
@@ -39,9 +35,9 @@
         background: #555;
     }
     .mini{
-        width: 3vw;
-        height: 3vw;
-        min-width: 3vw;
+        width: 22%;
+        height: auto;
+        object-fit: cover;
     }
     .gallery{
         margin:0;
@@ -52,16 +48,17 @@
         height: 100%;
         background-color: rgba(0, 0, 0,0.9);
         overflow-y: hidden;
+        display:flex;
+        align-items: center;
+        flex-direction: column;
     }
     .selectedImage{
         object-fit: contain;
-        /* position: relative; */
+        position: relative;
         padding-top: 8vh;
-        /* margin: auto; */
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
+        margin: auto;
+        justify-items: center;
+        text-align: center;
     }
     .imgBig{
         opacity: 1;
@@ -70,47 +67,42 @@
         max-height: 70vh;
     }
     .imageSelection{
-        margin: auto;
-        margin-left: 5%;
-        position: absolute;
-        bottom: 4vh;
-        width: 90%;
-        /* padding-bottom: 4vh; */
+        width: auto;
+        max-width: 90%;
         display: flex;
         flex-direction: row;
+        overflow-x: scroll;
+        padding-top: 2vh;
+        margin-bottom: 1vh;
         gap: 1vw;
         overflow-x: scroll;
     }
-    /* .imageSelection > img{
+    .imageSelection > img{
         width: auto;
         max-height: 8vh;
-    } */
+    }
     .closeButton{
-        margin-top: 2%;
-        margin-left: 2%;
-        color:aliceblue;
+        position: absolute;
+        top: 2%;
+        left: 2%;
+        color: aliceblue;
         font-size: 2em;
     }
     .closeButton:hover{
         cursor: pointer;
         color: aliceblue;
     }
-
     @media only screen and (max-width: 600px) {
         .closeButton{
             font-size: 6em;
             padding: 2vw;
         }
-        .mini {
-            width: 10vw;
-            height: 10vw;
-            min-width: 10vw;
-        }
+        /* .closeButton{}
+        } */
     }
 </style>
 
 {#if galleryOn}
-    <!-- TODO poner botón < y > -->
     <div class="gallery" >
         <div class="closeButton" on:mousedown={() => galleryOn=false}><Fa icon={faX}/></div>
         <div class="selectedImage">
@@ -118,9 +110,7 @@
         </div>
         <div class="imageSelection">
             {#each images as image}
-                <Lazy>
-                    <img src="{image}" alt="miniaturas" class="mini" on:mousedown={() => currentImage=image}/>
-                </Lazy>
+                <img src={`${image}`} alt="miniaturas" class="mini" on:mousedown={() => currentImage=image}/>
             {/each}
         </div>
     </div>
@@ -131,13 +121,6 @@
 </div>
 <div class="miniaturas">
     {#each images as image}
-        <Lazy>
-            <img src="{image}"
-                alt="main product" 
-                class="mini" 
-                on:mousedown={() => galleryOn=true} 
-                on:mousedown={() => currentImage=image}
-                />
-        </Lazy>
+        <img src={`${image}`} alt="miniaturas" class="mini" on:mousedown={() => galleryOn=true} on:mousedown={() => currentImage=image}/>
     {/each}
 </div>
