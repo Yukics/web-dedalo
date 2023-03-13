@@ -12,7 +12,7 @@
   line-height: 24px;
   font-weight: 500;
 
-  color-scheme: light dark;
+  color-scheme: dark light;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
@@ -51,10 +51,10 @@ p{
   line-height: 1.1em;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: #242424;
   }
   a:hover {
     color: #747bff;

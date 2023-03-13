@@ -6,6 +6,7 @@
     /* Desktop */
     .container{
         /* position: relative; */
+        padding-top: 4vh;
         font-size: 0.5vw;
         width: 100%;
         background-color:#242424;
@@ -42,10 +43,11 @@
     /* Mobile */
     @media only screen and (max-width: 600px) {
         .container{
+            padding-top: 4vh;
             font-size: 0.5vw;
             width: 100%;
             background-color:#242424;
-            /* padding-bottom: 4vh; */
+            padding-bottom: 4vh;
             height: 52vh;
             font-size: 80%;
             line-height: 2vw;
