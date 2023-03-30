@@ -54,6 +54,6 @@
   descripcion: "La mayor calidad"
   productos:
     
-    - name: "Aljibes agua potable"
+    - name: "Aljibes"
       descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
       imgPath: "/construccion/ALJIBESDEAGUAPOTABLE/"

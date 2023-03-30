@@ -3,6 +3,8 @@
         setGallery,
         setImage,
     } from "../lib/store.js";
+    
+    export let array;
     export let item;
     export let lazy = false;
 
@@ -38,7 +40,7 @@
     alt="miniaturas"
     class="mini"
     on:mousedown={() => setImage(item)}
-    on:mousedown={() => setGallery(true)}
+    on:mousedown={() => setGallery(true, array)}
 />
 
 <style>
