@@ -7,7 +7,7 @@ export const image = writable(localStorage.getItem("image") ||"");
 export function setPage(newPage:string) {
     page.set(newPage); // refresh UI
 }
-export function setGallery(newGallery:bool) {
+export function setGallery(newGallery:boolean) {
     gallery.set(newGallery); // refresh UI
 }
 export function setImage(newImage:string) {
