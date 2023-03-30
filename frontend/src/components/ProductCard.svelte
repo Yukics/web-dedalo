@@ -5,6 +5,14 @@
 </script>
 
 <style>
+    h2{
+        font-size: 2em;
+        color:aliceblue;
+    }
+    p{
+        font-size: 1em;
+        color: aliceblue;
+    }
     .card{
         background-color: rgba(0, 17, 39, 0.748);
         border-radius: 5px;
@@ -27,11 +35,9 @@
         }
         h2{
             font-size: 6em;
-            color:aliceblue;
         }
         p{
             font-size: 4em;
-            color: aliceblue;
         }
     }
 </style>

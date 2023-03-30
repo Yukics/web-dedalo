@@ -2,10 +2,10 @@
     import Fa from 'svelte-fa'
     import { faX } from '@fortawesome/free-solid-svg-icons'
     import Miniatura from './Miniatura.svelte';
+    import {galleryOn, setGallery, currentImage, setImage} from '../lib/store.js';
     export let images;
-    let galleryOn=false;
-    let currentImage;
     const hasAPI = "IntersectionObserver" in window;
+
 </script>
 
 <style>
@@ -104,15 +104,15 @@
     }
 </style>
 
-{#if galleryOn}
+{#if $galleryOn}
     <div class="gallery" >
-        <div class="closeButton" on:mousedown={() => galleryOn=false}><Fa icon={faX}/></div>
+        <div class="closeButton" on:mousedown={() => setGallery(false)}><Fa icon={faX}/></div>
         <div class="selectedImage">
-            <img src={`${currentImage}`} alt="currently selected" class="imgBig">
+            <img src={`${$currentImage}`} alt="currently selected" class="imgBig">
         </div>
         <div class="imageSelection">
             {#each images as image}
-                <img src={`${image}`} alt="miniaturas" class="mini" on:mousedown={() => currentImage=image}/>
+                <img src={`${image}`} alt="miniaturas" class="mini" on:mousedown={() => setImage(image)}/>
             {/each}
         </div>
     </div>
@@ -124,6 +124,6 @@
 
 <div class="miniaturas" >
     {#each images as item, i}
-        <Miniatura {item} lazy={hasAPI && i > 1} on:mousedown={() => galleryOn=true} on:mousedown={() => currentImage=item}/>
+        <Miniatura {item} lazy={hasAPI && i > 1} on:mousedown={() => setImage(item)} on:mousedown={() => setGallery(!$galleryOn)}/>
     {/each}
 </div>
