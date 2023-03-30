@@ -1,9 +1,11 @@
 <script lang="ts">
     import Fa from 'svelte-fa'
     import { faX } from '@fortawesome/free-solid-svg-icons'
+    import Miniatura from './Miniatura.svelte';
     export let images;
     let galleryOn=false;
     let currentImage;
+    const hasAPI = "IntersectionObserver" in window;
 </script>
 
 <style>
@@ -13,6 +15,11 @@
         object-fit: cover;
         border-radius: 5px;
     }
+    ::-webkit-scrollbar {
+        width: 1vw;
+        height: 1vh;
+    }
+
     .miniaturas{
         gap: 4%;
         width: 100%;
@@ -21,11 +28,6 @@
         flex-direction: row;
         overflow-x: scroll;      
     }
-    ::-webkit-scrollbar {
-        width: 1vw;
-        height: 1vh;
-    }
-
     ::-webkit-scrollbar-thumb {
         background: rgba(118, 175, 255, 0.587);
         border-radius: 5px;
@@ -36,7 +38,7 @@
     }
     .mini{
         width: 22%;
-        height: auto;
+        height:fit-content;
         object-fit: cover;
     }
     .gallery{
@@ -119,8 +121,9 @@
 <div>
     <img src={`${images[0]}`} alt="main product" class="first-image"/>
 </div>
-<div class="miniaturas">
-    {#each images as image}
-        <img src={`${image}`} alt="miniaturas" class="mini" on:mousedown={() => galleryOn=true} on:mousedown={() => currentImage=image}/>
+
+<div class="miniaturas" >
+    {#each images as item, i}
+        <Miniatura {item} lazy={hasAPI && i > 1} on:mousedown={() => galleryOn=true} on:mousedown={() => currentImage=item}/>
     {/each}
 </div>

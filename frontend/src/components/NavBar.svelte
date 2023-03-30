@@ -82,6 +82,7 @@
     @media only screen and (max-width: 600px) {
         .container{
             background-color: aliceblue;
+            height: 10vh;
         }
         nav{
             display: flex;

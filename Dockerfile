@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY ./frontend/ /app/
 
-RUN npm install && npm run build
+RUN npm install && npm run pre-build && npm run build
 
 FROM nginx 
 
