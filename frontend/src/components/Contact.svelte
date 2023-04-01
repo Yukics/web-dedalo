@@ -104,7 +104,7 @@
       <form class="formulario">
         <input
           type="text"
-          placeholder="Mail"
+          placeholder="Nombre"
           class="mail"
         />
         <textarea

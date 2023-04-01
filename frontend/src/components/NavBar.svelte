@@ -4,6 +4,11 @@
     // https://cweili.github.io/svelte-fa/
     import Fa from 'svelte-fa'
     import { faBars, faX } from '@fortawesome/free-solid-svg-icons'
+    
+    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+    let vh = window.innerHeight * 0.01;
+    // Then we set the value in the --vh custom property to the root of the document
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
 
     let menu:boolean = false;
 
@@ -33,9 +38,11 @@
 
 <style>
     .container{
+        display:block;
+        height: 8vh;
         width: 100%;
         font: 1.2vw;
-        background-color: aliceblue;
+        background-color: var(--main-color);
     }
     .desktop{
         width: 100%;
@@ -52,9 +59,9 @@
     }
     img{
         /* padding: 1vw; */
-        padding-top: 1vw;
-        padding-left: 1vw;
-        padding-bottom: 0.6vw;
+        margin-top: 1vw;
+        margin-left: 1vw;
+        /* margin-bottom: 0.6vw; */
         width: 6vw;
         height: fit-content;
     }
@@ -71,18 +78,25 @@
         display: inline-block;
         cursor: pointer;
         min-width: fit-content;
-        color: black;
+        color: var(--alt-color);
         padding-left: 1vw;
     }
     
     /* Mobile */
     .mobile {
-        display:none;
+        display: none;
     }
     @media only screen and (max-width: 600px) {
+        .desktop{
+            display:none;
+        }
+        .mobile{
+            display: contents;
+        }
         .container{
-            background-color: aliceblue;
-            height: 10vh;
+            z-index: 1;
+            height: 8vh;
+            background-color: var(--main-color);
         }
         nav{
             display: flex;
@@ -91,36 +105,31 @@
             align-items: center;
         }
         img{
-            width: 12vh;
-            padding-left: 4vw;
-            padding-top: 2vw;
-            padding-bottom: 1vw;
+            width: 10vh;
+            margin-left: 4vw;
+            margin-top: 2vw;
+            /* padding-bottom: 1vw; */
         }
         .burger{
             font-size: 4vh;
-            color: black;
+            color: var(--alt-color);
             padding-right: 4vh;
         }
-        .desktop{
-            display:none;
-        }
-        .mobile{
-            display: contents;
-        }
+
         .mobileMenu{
-            opacity: 96%;
             position: absolute;
+            /* margin-top: -1vh; */
             width: 100%;
-            height:auto;
+            height: auto;
             z-index: 100;
-            background-color: rgb(255, 255, 255);
+            background-color: var(--main-color);
             overflow-y: hidden;
         }
         ul{
             width: 100%;
             display: flex;
             flex-direction: column;
-            padding: 10vw;
+            padding: 1vw;
         }
         li{
             width: 100%;
@@ -170,7 +179,6 @@
         </nav>
         {#if menu === true}
             <div class="mobileMenu" on:mousedown={()=>handleMenu()} use:clickOutside={() => {
-                console.log('clicked outside');
                 menu = false;
             }} transition:slide>
                 <div class="links">

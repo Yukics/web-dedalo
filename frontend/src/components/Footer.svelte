@@ -5,8 +5,7 @@
 <style>
     /* Desktop */
     .container{
-        /* position: relative; */
-        padding-top: 4vh;
+        margin-top: 4vh;
         font-size: 0.5vw;
         width: 100%;
         background-color:#242424;
@@ -35,7 +34,7 @@
         line-height: 0.6vw;
         color: aliceblue;
     }
-    .bold{
+    .footer-title{
         font-size: 1.2em;
         padding-bottom: 0.6vh;
     }
@@ -44,20 +43,17 @@
     /* Mobile */
     @media only screen and (max-width: 600px) {
         .container{
-            padding-top: 4vh;
-            font-size: 0.5vw;
+            margin-top: 4vh;
             width: 100%;
             background-color:#242424;
-            padding-bottom: 4vh;
+            margin-top: 4vh;
             height: 52vh;
-            font-size: 80%;
-            line-height: 2vw;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
         .info{
-            width: 90%;
+            width: 80%;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -65,23 +61,23 @@
             gap: 2vh;
         }
         .autor{
-            padding-top: 2vh;
+            /* padding-top: 2vh; */
             text-align: center;
             align-items: center;
             width: 100%;
-            font-size: 3rem;
-            line-height: 1.4em;
+            /* font-size: 3rem; */
+            line-height: 1.2em;
         }
         p{
-            font-size: 3.6rem;
-            line-height: 1.4em;
+            font-size: 4em;
+            line-height: 1vh;
             color: aliceblue;
             word-break:break-all;
         }
-        .bold{
+        .footer-title{
+            font-size: 10em;
             color: rgb(158, 158, 158);
             font-weight: 900;
-            font-size: 6em;
             padding-bottom: 0.6vh;
         }
     }
@@ -90,13 +86,13 @@
 <div class="container">
     <div class="info">
         <div class="col1">
-            <p class="bold">Localización</p>
+            <p class="footer-title">Localización</p>
             <p>C/ Son Julià, 200 - Nave 14</p>
             <p>Polígono Son Noguera</p>
             <p>07620 Llucmajor</p>
         </div>
         <div class="col2">
-            <p class="bold">Contacto</p>
+            <p class="footer-title">Contacto</p>
             <p>Teléfono 1: 607 288 872</p>
             <p>Teléfono 2: 670 628 972</p>
             <p>Email: impermeabilizaciones@dedalosl.com</p>

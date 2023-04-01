@@ -13,7 +13,7 @@
   font-weight: 500;
 
   --main-bg-color: #242424;
-  --main-color: rgba(255, 255, 255, 0.87);
+  --main-color: rgba(255, 255, 255);
   --alt-color: rgb(64, 64, 64);
   --alt-soft-color: rgb(64, 64, 64);
   --link-static-color: #646cff;

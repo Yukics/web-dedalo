@@ -42,7 +42,8 @@
             width: 80%;
         }
         h2{
-            font-size: 6rem;
+            font-size: 10em;
+            line-height: 6vh;
         }
         p{
             /* text-align:justify; */
@@ -55,6 +56,7 @@
 
 <div class="container">
     <div class="content">
-        {@html $pageContent.presentacion}
+        <h2>{$pageContent.presentacion.quien}</h2>
+        <p>{@html $pageContent.presentacion.texto.replaceAll('\n',"<br><br>")}</p>
     </div>
 </div>

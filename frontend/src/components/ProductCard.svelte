@@ -8,39 +8,43 @@
 <style>
     h2{
         font-size: 1.4em;
-        color:aliceblue;
+        color:var(--main-color);
     }
     p{
         font-size: 1em;
-        color: aliceblue;
+        color: var(--main-color);
     }
     .card{
-        background-color: rgba(0, 17, 39, 0.748);
+        background-color: var(--alt-color);
         border-radius: 10px;
         width: 28%;
         padding: 1%;
         display: flex;
-        /* margin-top: 5%; */
         flex-direction: column;
     }
-    .not-top{
-        margin-top: 2%;
+    .not-top-desktop{
+        padding-top: 2%;
     }
     @media only screen and (max-width: 600px) {
         .card{
             width: 100%;
         }
+        .not-top-mobile{
+            margin-top: 10%;
+        }
         h2{
+            padding-left: 4vw;
             font-size: 6em;
         }
         p{
+            padding-left: 4vw;
             font-size: 4em;
         }
     }
 </style>
 
 
-<div class="card" class:not-top="{isTop >= 3}" in:fade>
+<div class="card" class:not-top-desktop={isTop >= 3} class:not-top-mobile={isTop >= 1} in:fade>
     <h2>{product.name}</h2>
     <Gallery images={product.img}/>
     <p>{product.descripcion}</p>
