@@ -11,6 +11,7 @@
   //? page store persistence
   page.subscribe(val => localStorage.setItem("page", val));
   let disabledScroll=true;
+
 </script>
 
 <style>

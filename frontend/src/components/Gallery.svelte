@@ -5,7 +5,6 @@
     import {galleryOn, setGallery, currentImage, setImage, galleryImages} from '../lib/store.js';
     export let images;
     const hasAPI = "IntersectionObserver" in window;
-
 </script>
 
 <style>
@@ -21,9 +20,9 @@
     }
 
     .miniaturas{
-        gap: 4%;
+        gap: 1%;
         width: 100%;
-        height: 16%;
+        height: 40%;
         display: flex;
         flex-direction: row;
         overflow-x: scroll;      

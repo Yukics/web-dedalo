@@ -3,7 +3,7 @@
         setGallery,
         setImage,
     } from "../lib/store.js";
-    
+
     export let array;
     export let item;
     export let lazy = false;
@@ -36,6 +36,7 @@
 
 <img
     use:lazyLoad
+    loading="lazy"
     src={`${item}`}
     alt="miniaturas"
     class="mini"
@@ -46,7 +47,7 @@
 <style>
     .mini {
         width: 22%;
-        height: 4vh;
+        height: 8vh;
         object-fit: cover;
     }
 </style>

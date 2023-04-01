@@ -2,11 +2,12 @@
     import Gallery from "./Gallery.svelte";
     import { fade } from 'svelte/transition';
     export let product;
+    export let isTop;
 </script>
 
 <style>
     h2{
-        font-size: 2em;
+        font-size: 1.4em;
         color:aliceblue;
     }
     p{
@@ -15,19 +16,15 @@
     }
     .card{
         background-color: rgba(0, 17, 39, 0.748);
-        border-radius: 5px;
-        width: 23%;
-        padding: 2vh;
+        border-radius: 10px;
+        width: 28%;
+        padding: 1%;
         display: flex;
+        /* margin-top: 5%; */
         flex-direction: column;
-        gap: 2vh;
     }
-    .first-image{
-        padding-top: 2vh;
-        width: 100%;
-        height: 20vh;
-        object-fit: cover;
-        border-radius: 5px;
+    .not-top{
+        margin-top: 2%;
     }
     @media only screen and (max-width: 600px) {
         .card{
@@ -42,9 +39,9 @@
     }
 </style>
 
-<div class="card" in:fade>
+
+<div class="card" class:not-top="{isTop >= 3}" in:fade>
     <h2>{product.name}</h2>
-    <!-- <img src={`/content/${product.img[0]}`} alt="main product" class="first-image"/> -->
     <Gallery images={product.img}/>
     <p>{product.descripcion}</p>
 </div>

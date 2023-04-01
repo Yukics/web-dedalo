@@ -18,6 +18,7 @@
         align-items: center;
         align-content: center;
         justify-content: center;
+        margin-bottom: 2%;
     }
     .info{
         width: 90%;
@@ -31,7 +32,7 @@
     }
     p{
         font-size: 0.8vw;
-        line-height: 1.4vw;
+        line-height: 0.6vw;
         color: aliceblue;
     }
     .bold{
@@ -90,11 +91,15 @@
     <div class="info">
         <div class="col1">
             <p class="bold">Localización</p>
-            <p>C/ Son Julià, 200 - Nave 14<br>Polígono Son Noguera<br>07620 Llucmajor</p>
+            <p>C/ Son Julià, 200 - Nave 14</p>
+            <p>Polígono Son Noguera</p>
+            <p>07620 Llucmajor</p>
         </div>
         <div class="col2">
             <p class="bold">Contacto</p>
-            <p>Teléfono 1: 607 288 872<br>Teléfono 2: 670 628 972<br>Email: impermeabilizaciones@dedalosl.com</p>
+            <p>Teléfono 1: 607 288 872</p>
+            <p>Teléfono 2: 670 628 972</p>
+            <p>Email: impermeabilizaciones@dedalosl.com</p>
         </div>
         <div class="autor">
             <p><a href="/">Dedalo SL ©</a></p>

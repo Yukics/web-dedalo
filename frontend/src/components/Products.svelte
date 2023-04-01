@@ -1,23 +1,23 @@
 <script lang="ts">
-    import { onMount } from 'svelte';
-    import getElements from "../lib/product";
+    import {pageContent} from "../lib/product";
     import ProductCard from "./ProductCard.svelte";
 
-    let elements;
-    onMount(async () => {
-      elements = await getElements();
-      elements = elements;
-    });
+    // onMount(async () => {
+    //   elements = await getElements();
+    //   elements = elements;
+    // });
 </script>
 
 <style>
   .main{
-    width: 100%;
+    width: 94%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     align-content: center;
+    padding-left: 3%;
+    padding-right: 3%;
   }
   .category{
     margin-top: 4vh;
@@ -26,24 +26,30 @@
     padding-right: 2vh;
     padding-left: 2vh;
     width: 90%;
-    background-color: aliceblue;
+    background-color: var(--main-color);
     border-radius: 5px;
   }
   .products{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content:stretch;
     padding-top: 4vh;
-    gap: 2.2vw;
+    padding-bottom: 4vh;
+    padding-inline: 2%;
+    gap: 5%;
+    
   }
   h1{
-    font-size: 1.8em;
-    color: rgb(64, 64, 64);
+    padding-left: 2%;
+    font-size: 2em;
+    color: var(--alt-color);
   }
   p{
+    padding-left: 2%;
     padding-top: 1vh;
-    color: rgb(98, 98, 98);
+    font-size: 1.2em;
+    color: var(--alt-soft-color);
   }
   @media only screen and (max-width: 600px) {
     h1{
@@ -55,18 +61,21 @@
   }
 
 </style>
+
 <div class="main">
-  {#if elements}
-    {#each elements as product}
+  {#await $pageContent}
+    Waiting screen
+  {:then}
+    {#each $pageContent.catalogo as product}
     <div class="category">
       <h1>{product.tipo}</h1>
       <p>{product.descripcion}</p>
       <div class="products">
-        {#each product.productos as tipo}
-        <ProductCard product={tipo}/>
+        {#each product.productos as tipo, i}
+          <ProductCard product={tipo} isTop={i}/>
         {/each}
       </div>
     </div>
     {/each}
-  {/if}
+  {/await}
 </div>

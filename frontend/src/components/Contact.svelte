@@ -1,6 +1,5 @@
 <script lang="ts">
   import { Input, Textarea, Button, P } from 'flowbite-svelte';
-    // import { xl } from 'flowbite-svelte/types';
   import { form, field } from 'svelte-forms';
   import { required, email } from 'svelte-forms/validators';
 
@@ -114,29 +113,5 @@
         />
         <button class="boton">Enviar</button>
       </form>
-      <!-- <Input type="text" id="mail" placeholder="Correo" required bind:value={$mail.value} class="mail text-white"/>
-      <Textarea rows="3" size="2xl" type="text" id="message" placeholder="Mensaje" required bind:value={$message.value} class="message"/> -->
-      <!-- <Button class="boton text-xl color:white" pill={true} style={"fontSize"}><P class="text-white" size="xl">Enviar</P></Button> -->
-    <!-- <section> -->
-      <!-- <Textfield 
-        variant="outlined" 
-        input$maxlength={50} 
-        bind:value={$mail.value} 
-        label="Email"
-        style="width: 22vw; height: 200px; font-size: 4em"
-        />
-      <Textfield 
-        textarea 
-        input$maxlength={240} 
-        bind:value={$message.value} 
-        label="Mensaje"
-        style="width: 22vw; height: 200px; font-size: 4em"
-      >
-        <CharacterCounter slot="internalCounter">0 / 240</CharacterCounter>
-      </Textfield>
-      <Button variant="raised" style="background-color: blue; width: 10vw; height: 90vh">
-        <Label>Enviar</Label>
-        <Icon class="material-icons">favorite</Icon>
-      </Button> -->
     </div>
 </div>

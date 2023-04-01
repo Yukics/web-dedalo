@@ -1,5 +1,14 @@
 import axios from "axios";
+import { writable } from 'svelte/store';
 
+// Stores
+export const pageContent = writable(await getElements());
+
+export function setpageContent(newContent) {
+    pageContent.set(newContent);
+}
+
+// Functions
 export default async function getElements(){
     try {
         const language = getLanguage();

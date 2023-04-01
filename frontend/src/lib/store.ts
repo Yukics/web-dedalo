@@ -5,6 +5,7 @@ export const galleryOn = writable(false);
 export const galleryImages = writable([]);
 export const currentImage = writable("");
 
+
 export function setPage(newPage:string) {
     page.set(newPage); // refresh UI
 }
@@ -17,3 +18,4 @@ export function setGallery(newGallery:boolean, newGalleryImages) {
 export function setImage(newImage:string) {
     currentImage.set(newImage);
 }
+
