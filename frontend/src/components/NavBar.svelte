@@ -89,7 +89,7 @@
         }
         .container{
             z-index: 1;
-            height: 8vh;
+            height: 10vh;
             background-color: var(--main-color);
         }
         nav{
@@ -100,9 +100,8 @@
         }
         img{
             width: 10vh;
-            margin-left: 4vw;
-            margin-top: 2vw;
-            /* padding-bottom: 1vw; */
+            padding-bottom: 0vh; /* If not brokens the menu */
+
         }
         .burger{
             font-size: 4vh;

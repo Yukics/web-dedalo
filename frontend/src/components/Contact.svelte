@@ -7,6 +7,12 @@
   const message = field('message', '', [required()]);
   const myForm = form(mail, message);
 
+  function sendMail(){
+    const subject = encodeURI(document.querySelector("#subject").value);
+    const message = encodeURI(document.querySelector("#message").value);
+    window.location.href = `mailto:clientes@dedalosl.com?subject=${subject}&body=${message}`;
+  }
+
 </script>
 
 <style>
@@ -103,15 +109,17 @@
       <h1>Ponte en contacto</h1>
       <form class="formulario">
         <input
+          id="subject"
           type="text"
           placeholder="Nombre"
           class="mail"
         />
         <textarea
+          id="message"
           placeholder="Mensaje"
           class="mensaje"
         />
-        <button class="boton">Enviar</button>
+        <button class="boton" on:click={() => sendMail()}>Enviar</button>
       </form>
     </div>
 </div>
