@@ -39,7 +39,7 @@
 <style>
     .container{
         display:block;
-        height: 8vh;
+        height: 12vh;
         width: 100%;
         font: 1.2vw;
         background-color: var(--main-color);
@@ -52,18 +52,12 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between; 
-    }
-
-    .icon{
-        cursor: pointer;
+        align-items:stretch;
     }
     img{
-        /* padding: 1vw; */
-        margin-top: 1vw;
-        margin-left: 1vw;
-        /* margin-bottom: 0.6vw; */
+        cursor: pointer;
+        padding: 2vh;
         width: 6vw;
-        height: fit-content;
     }
     .links {
         display: flex;
@@ -147,10 +141,7 @@
     <!-- desktop -->
     <div class="desktop">
         <nav>
-            <!-- svelte-ignore a11y-click-events-have-key-events -->
-            <div on:mousedown={() => setPage("inicio")} class="icon">
-                <img src="/img/dedalo-rojo.svg" alt="log">
-            </div>
+            <img src="/img/dedalo-rojo.svg" alt="log" on:mousedown={() => setPage("inicio")} class="icon">
             <div class="links">
                 <ul>
                     <!-- svelte-ignore a11y-click-events-have-key-events -->
