@@ -23,7 +23,7 @@
         flex-direction: column;
     }
     .not-top-desktop{
-        padding-top: 2%;
+        margin-top: 2%;
     }
     @media only screen and (max-width: 600px) {
         .card{
