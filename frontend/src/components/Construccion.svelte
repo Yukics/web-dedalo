@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { loop_guard } from "svelte/internal";
     import {pageContent} from "../lib/product";
     import ProductCard from "./ProductCard.svelte";
     console.log($pageContent.construccion)
@@ -66,13 +67,13 @@
   {#await $pageContent}
     Waiting screen
   {:then}
-  {#each $pageContent.construccion as product}
+  {#each $pageContent.construccion as build}
     <div class="category">
-      <h1>{product.tipo}</h1>
-      <p>{product.descripcion}</p>
+      <h1>{build.tipo}</h1>
+      <p>{build.descripcion}</p>
       <div class="products">
-        {#each product.productos as tipo, i}
-          <!-- <ProductCard product={tipo} isTop={i}/> -->
+        {#each build.productos as tipo, i}
+          <ProductCard product={tipo} isTop={i}/>
         {/each}
       </div>
     </div>

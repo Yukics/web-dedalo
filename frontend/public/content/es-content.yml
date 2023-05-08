@@ -72,24 +72,30 @@ construccion:
 
   - tipo: "Impermeabilización de muros, terrazas y cubiertas"
     descripcion: "Mediante la aplicación de láminas asfálticas y mallas de drenaje o láminas de PVC, dependiendo de las necesidades técnicas ponemos a su alcance una amplia gama de productos para impermeabilizar las diferentes superficies."
-    productos:     
-
+    productos:   
       - name: "Asfalto"
         descripcion: ""
         imgPath: "/construccion/ASFALTO/"
-
-  - tipo: "Impermeabilización de lagos"
-    descripcion: "Mediante la aplicación de láminas de PVC y láminas de caucho EPDM"
-    productos:
-
       - name: "Muros"
         descripcion: ""
         imgPath: "/construccion/MUROS/"
 
+  - tipo: "Impermeabilización de lagos"
+    descripcion: "Mediante la aplicación de láminas de PVC y láminas de caucho EPDM"
+    productos:
       - name: "PVC"
         descripcion: ""
         imgPath: "/construccion/PVC/"
-
       - name: "Waterstop"
         descripcion: ""
         imgPath: "/construccion/WATERSTOP/"
+
+contact:
+  title: Ponte en contacto
+  mailPlaceholder: Mi correo
+  textPlaceholder: Mensaje
+  sendButton: Enviar
+
+footer:
+  locationTitle: Localización
+  contactTitle: Contacto

@@ -8,13 +8,20 @@ try {
     for (const yaml_file of yaml_files) {
         completed_json[`${yaml_file.slice(0,2)}`] = readFile(`./public/content/${yaml_file}`);
     }
+    
     for (const key in completed_json) {
         for(let i=0; i < completed_json[key]["catalogo"].length; i++){
             for(let y=0; y < completed_json[key]["catalogo"][i]["productos"].length; y++){
                 completed_json[key]["catalogo"][i]["productos"][y]["img"] = getImagesFrom(`./public/content${completed_json[key]["catalogo"][i]["productos"][y]["imgPath"]}`)
             }
         }
+        for(let x=0; x < completed_json[key]["construccion"].length; x++){
+            for(let z=0; z < completed_json[key]["construccion"][x]["productos"].length; z++){
+                completed_json[key]["construccion"][x]["productos"][z]["img"] = getImagesFrom(`./public/content${completed_json[key]["construccion"][x]["productos"][z]["imgPath"]}`)
+            }
+        }
     }
+
     fs.writeFileSync('./public/content.json', JSON.stringify(completed_json), 'utf8');
     console.log("[OK] Yaml to JSON parsing completed!")
 } catch (err) {
