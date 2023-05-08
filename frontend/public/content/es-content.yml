@@ -15,15 +15,15 @@ catalogo:
     productos:
       
       - name: "Arena"
-        descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
+        descripcion: ""
         imgPath: "/monocromo/arena/"
 
       - name: "Azul"
-        descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
+        descripcion: ""
         imgPath: "/monocromo/azul/"
 
       - name: "Blanco"
-        descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
+        descripcion: ""
         imgPath: "/monocromo/blanco/"
 
   - tipo: "Texturizadas"
@@ -31,19 +31,19 @@ catalogo:
     productos:
       
       - name: "Prestige"
-        descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
+        descripcion: ""
         imgPath: "/texturizadas/PRESTIGE/"
 
       - name: "Relax"
-        descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
+        descripcion: ""
         imgPath: "/texturizadas/RELAX/" 
 
       - name: "Sublime"
-        descripcion: "Pos ha quedao buena tarde"
+        descripcion: ""
         imgPath: "/texturizadas/SUBLIME/"
             
       - name: "Vanity"
-        descripcion: "Pos ha quedao pero que muy buena tarde"
+        descripcion: ""
         imgPath: "/texturizadas/VANITY/"
   
   - tipo: "Estampadas"
@@ -51,15 +51,15 @@ catalogo:
     productos:
       
       - name: "Carrara"
-        descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
+        descripcion: ""
         imgPath: "/estampadas/CARRARA/"
       
       - name: "Persia azul"
-        descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
+        descripcion: ""
         imgPath: "/estampadas/PERSIAAZUL/"
       
       - name: "Persia marron"
-        descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
+        descripcion: ""
         imgPath: "/estampadas/PERSIAMARRON/"
 
 construccion:
@@ -67,7 +67,7 @@ construccion:
     descripcion: "Con lámina de PVC apta para agua potable, ofrecemos la mejor solución para la estanqueidad de aljibes."
     productos:
       - name: "Aljibes"
-        descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
+        descripcion: ""
         imgPath: "/construccion/ALJIBESDEAGUAPOTABLE/"
 
   - tipo: "Impermeabilización de muros, terrazas y cubiertas"
@@ -75,7 +75,7 @@ construccion:
     productos:     
 
       - name: "Asfalto"
-        descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
+        descripcion: ""
         imgPath: "/construccion/ASFALTO/"
 
   - tipo: "Impermeabilización de lagos"
@@ -83,13 +83,13 @@ construccion:
     productos:
 
       - name: "Muros"
-        descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
+        descripcion: ""
         imgPath: "/construccion/MUROS/"
 
       - name: "PVC"
-        descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
+        descripcion: ""
         imgPath: "/construccion/PVC/"
 
       - name: "Waterstop"
-        descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
+        descripcion: ""
         imgPath: "/construccion/WATERSTOP/"
