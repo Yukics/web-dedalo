@@ -16,6 +16,7 @@ try {
         }
     }
     fs.writeFileSync('./public/content.json', JSON.stringify(completed_json), 'utf8');
+    console.log("[OK] Yaml to JSON parsing completed!")
 } catch (err) {
     console.error(err);
 }

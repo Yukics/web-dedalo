@@ -1,12 +1,13 @@
 <script lang="ts">
   import {page} from './lib/store.js'
 
-  import NavBar from "./components/NavBar.svelte"
+  import NavBar from "./components/NavBar/NavBar.svelte"
   import Main from "./components/Main.svelte"
   import Empresa from "./components/Empresa.svelte"
-  import Footer from "./components/Footer.svelte";
-  import Products from "./components/Products.svelte"
-  import Contact from './components/Contact.svelte';
+  import Footer from "./components/Footer/Footer.svelte";
+  import Products from "./components/Products.svelte";
+  import Construccion from "./components/Construccion.svelte";
+  import Contact from './components/Contact/Contact.svelte';
 
   //? page store persistence
   page.subscribe(val => localStorage.setItem("page", val));
@@ -32,6 +33,9 @@
 
   {:else if $page === "product"}
     <Products/>
+
+  {:else if $page === "construccion"}
+    <Construccion/>
   
   {:else if $page === "contact"}
     <Contact/>

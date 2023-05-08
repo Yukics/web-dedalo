@@ -11,7 +11,7 @@ presentacion:
 
 catalogo:
   - tipo: "Monocromo"
-    descripcion: "Rápidamente aplicable y con excelentes resultados"
+    descripcion: "1.5mm de espesor unicolor"
     productos:
       
       - name: "Arena"
@@ -47,7 +47,7 @@ catalogo:
         imgPath: "/texturizadas/VANITY/"
   
   - tipo: "Estampadas"
-    descripcion: "Rápidamente aplicable y con excelentes resultados"
+    descripcion: "1.5mm de espesor estampada doblemente lacada"
     productos:
       
       - name: "Carrara"
@@ -62,17 +62,25 @@ catalogo:
         descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
         imgPath: "/estampadas/PERSIAMARRON/"
 
-  - tipo: "Construcción"
-    descripcion: "La mayor calidad"
+construccion:
+  - tipo: "Impermeabilización de aljibes"
+    descripcion: "Con lámina de PVC apta para agua potable, ofrecemos la mejor solución para la estanqueidad de aljibes."
     productos:
-      
       - name: "Aljibes"
         descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
         imgPath: "/construccion/ALJIBESDEAGUAPOTABLE/"
 
+  - tipo: "Impermeabilización de muros, terrazas y cubiertas"
+    descripcion: "Mediante la aplicación de láminas asfálticas y mallas de drenaje o láminas de PVC, dependiendo de las necesidades técnicas ponemos a su alcance una amplia gama de productos para impermeabilizar las diferentes superficies."
+    productos:     
+
       - name: "Asfalto"
         descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"
         imgPath: "/construccion/ASFALTO/"
+
+  - tipo: "Impermeabilización de lagos"
+    descripcion: "Mediante la aplicación de láminas de PVC y láminas de caucho EPDM"
+    productos:
 
       - name: "Muros"
         descripcion: "El vinilado queda muy bien de la siguiente forma bla bla bla"

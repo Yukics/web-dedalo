@@ -104,14 +104,14 @@
 </style>
 
 <div>
-    <img src={`${images[0]}`} alt="main product" class="first-image"/>
+    <img src={`${images[0]}`} alt="main product" class="first-image" on:mousedown={() => setImage(images[0])} on:mousedown={() => setGallery(!$galleryOn, images)}/>
 </div>
 
-<div class="miniaturas" >
+<!-- <div class="miniaturas" >
     {#each images as item, i}
         <Miniatura {item} array={images} lazy={hasAPI && i > 1} on:mousedown={() => setImage(item)} on:mousedown={() => setGallery(!$galleryOn, images)}/>
     {/each}
-</div>
+</div> -->
 
 {#if $galleryOn}
     <div class="gallery" >
