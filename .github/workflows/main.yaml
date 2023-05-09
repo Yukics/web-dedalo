@@ -3,9 +3,9 @@ name: CICD
 # Cuando se haga un push a main o un pull request hacia main
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
   # permitir ejecutar el action a mano
   workflow_dispatch:
