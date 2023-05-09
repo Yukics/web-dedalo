@@ -1,0 +1,22 @@
+name: Rollout production
+
+# Cuando se haga un push a main o un pull request hacia main
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  # permitir ejecutar el action a mano
+  workflow_dispatch:
+
+jobs:
+
+  build-deploy:
+    # usar el runner de azure
+    runs-on: [self-hosted]
+    steps:
+      - name: Building arco
+        run: /docker/web-dedalo/cicd/rollout.sh
+
+
