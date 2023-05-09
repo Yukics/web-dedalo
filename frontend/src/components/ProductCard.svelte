@@ -3,7 +3,6 @@
     import { fade } from 'svelte/transition';
     export let product;
     export let isTop;
-    console.log(product.img)
 </script>
 
 <style>

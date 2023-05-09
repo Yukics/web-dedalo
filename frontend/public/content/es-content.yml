@@ -63,14 +63,14 @@ catalogo:
         imgPath: "/estampadas/PERSIAMARRON/"
 
 construccion:
-  - tipo: "Impermeabilización de aljibes"
+  - tipo: "Aljibes"
     descripcion: "Con lámina de PVC apta para agua potable, ofrecemos la mejor solución para la estanqueidad de aljibes."
     productos:
-      - name: "Aljibes"
+      - name: ""
         descripcion: ""
         imgPath: "/construccion/ALJIBESDEAGUAPOTABLE/"
 
-  - tipo: "Impermeabilización de muros, terrazas y cubiertas"
+  - tipo: "Muros, terrazas y cubiertas"
     descripcion: "Mediante la aplicación de láminas asfálticas y mallas de drenaje o láminas de PVC, dependiendo de las necesidades técnicas ponemos a su alcance una amplia gama de productos para impermeabilizar las diferentes superficies."
     productos:   
       - name: "Asfalto"
@@ -80,7 +80,7 @@ construccion:
         descripcion: ""
         imgPath: "/construccion/MUROS/"
 
-  - tipo: "Impermeabilización de lagos"
+  - tipo: "Lagos"
     descripcion: "Mediante la aplicación de láminas de PVC y láminas de caucho EPDM"
     productos:
       - name: "PVC"
