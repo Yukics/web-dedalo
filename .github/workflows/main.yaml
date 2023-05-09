@@ -20,14 +20,11 @@ jobs:
           cd /docker/web-dedalo
           docker build -t yuki/web-dedalo:latest -t yuki/web-dedalo:`date +%Y%m%d%H%M` .
           docker compose up -d --force-recreate
-
-  rollback-if-necessary:
-    runs-on: [self-hosted]
-    steps:
       - name: Wait until container is up
         run: sleep 30
       - name: Request if its not okay retag previous image as latest and redeploy
         run: |
           if [[ ! $(curl https://dedalosl.com | grep "DOCTYPE html") ]]; then docker rmi yuki/web-dedalo:latest && docker tag `docker images | grep dedalo | tail -2 | head -1 | awk '{print $3}'` yuki/web-dedalo:latest && docker compose up -d --force-recreate; fi
+      
 
 
