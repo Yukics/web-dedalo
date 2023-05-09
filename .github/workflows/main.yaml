@@ -1,4 +1,4 @@
-name: Rollout production
+name: CICD
 
 # Cuando se haga un push a main o un pull request hacia main
 on:
